@@ -1,0 +1,89 @@
+name: Report a bug
+description: Something broken, or a map detail that does not match the game.
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Please [search existing issues](https://github.com/JanitorHead/maptridge-feedback/issues?q=is%3Aissue) first. This report will be public.
+  - type: input
+    id: version
+    attributes:
+      label: Maptridge version
+      description: Shown at the bottom right of the page (for example 1.1.6). The Report a bug link in Maptridge fills it in.
+      placeholder: "1.1.6"
+    validations:
+      required: true
+  - type: dropdown
+    id: page
+    attributes:
+      label: Where
+      options:
+        - Metroid (NES) map
+        - Dashboard (home page)
+        - Somewhere else
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Another Chromium browser (Brave, Opera, Vivaldi…)
+        - Another Firefox browser (Zen, LibreWolf…)
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Computer
+        - Phone
+        - Tablet
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: For a map mistake, name the area and room, and what the game shows instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the Metroid map
+        2. Click …
+        3. See …
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: false
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Screenshots or saved map
+      description: A screenshot helps a lot. If the problem is in your map, attach the file from File › Save file.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before sending
+      options:
+        - label: I searched the existing issues.
+          required: true
+        - label: I understand this report is public and contains no personal data.
+          required: true

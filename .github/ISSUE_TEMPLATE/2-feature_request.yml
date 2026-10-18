@@ -1,0 +1,29 @@
+name: Suggest an idea
+description: A feature, a change, or a game you would like mapped next.
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please [search existing issues](https://github.com/JanitorHead/maptridge-feedback/issues?q=is%3Aissue) first; if your idea is there, a 👍 on it counts as a vote.
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What you would like Maptridge to do.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it helps
+      description: What you were trying to do when you missed it.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before sending
+      options:
+        - label: I searched the existing issues.
+          required: true

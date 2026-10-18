@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Open Maptridge
+    url: https://maptridge.pages.dev
+    about: Play with the map before reporting, to check the problem is still there.
+  - name: Report a security problem
+    url: https://github.com/JanitorHead/maptridge-feedback/security/advisories/new
+    about: Privately, not as a public issue.
