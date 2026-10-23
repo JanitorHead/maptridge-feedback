@@ -18,8 +18,10 @@ body:
     id: page
     attributes:
       label: Where
+      description: The Report a bug link in Maptridge picks the map you were on.
       options:
         - Metroid (NES) map
+        - The Legend of Zelda (NES) map
         - Dashboard (home page)
         - Somewhere else
     validations:
@@ -52,7 +54,7 @@ body:
     id: what-happened
     attributes:
       label: What happened
-      description: For a map mistake, name the area and room, and what the game shows instead.
+      description: For a map mistake, name the place (a Metroid area and room, a Zelda screen like H8 or a Level room) and what the game shows instead.
     validations:
       required: true
   - type: textarea
@@ -60,7 +62,7 @@ body:
     attributes:
       label: Steps to reproduce
       placeholder: |
-        1. Open the Metroid map
+        1. Open the Metroid or Zelda map
         2. Click …
         3. See …
     validations:
