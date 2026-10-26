@@ -6,6 +6,17 @@ body:
     attributes:
       value: |
         Please [search existing issues](https://github.com/JanitorHead/maptridge-feedback/issues?q=is%3Aissue) first; if your idea is there, a 👍 on it counts as a vote.
+  - type: dropdown
+    id: for
+    attributes:
+      label: For
+      options:
+        - Metroid (NES) map
+        - The Legend of Zelda (NES) map
+        - Every map, or the site
+        - A new game
+    validations:
+      required: true
   - type: textarea
     id: idea
     attributes:
